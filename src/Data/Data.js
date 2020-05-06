@@ -16,25 +16,27 @@ export default [
 
             capacity: 1,
 
-            adsCondition:"New",
-            adsBrand:"Apple",
+            adsCondition: "New",
+            adsBrand: "Apple",
 
-            publishedID:"1",
-            publishedName:"Saidul Badhon",
-            publishedNumber:"01620861542",
-            store:true,
-            storeName:"TechSecBD",
-            storeWebsite:"https://TechSecBD.com",
+            publisherID: "1",
+            publisherName: "Saidul Badhon",
+            publisherEmail: "SaidulBadhon@gmail.com",
+            publisherNumber: "01620861542",
+
+            store: true,
+            storeName: "TechSecBD",
+            storeWebsite: "https://TechSecBD.com",
 
 
 
             regularAds: true,
-            featuredAds: false,
+            featuredAds: true,
             premiumAds: false,
 
             description:
                 "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            extras: [
+            features: [
                 "Infinity Display",
                 "12MP Rear-Facing Camera",
                 "Iris Security Scanner",
@@ -101,25 +103,26 @@ export default [
 
             capacity: 1,
 
-            adsCondition:"Used",
-            adsBrand:"Samsung",
+            adsCondition: "Used",
+            adsBrand: "Samsung",
 
-            publishedID:"1",
-            publishedName:"Saidul Badhon",
-            publishedNumber:"01620861542",
-            store:true,
-            storeName:"TechSecBD",
-            storeWebsite:"https://TechSecBD.com",
+            publisherID: "1",
+            publisherName: "Saidul Badhon",
+            publisherEmail: "SaidulBadhon2@gmail.com",
+            publisherNumber: "016208615424",
+            store: true,
+            storeName: "TechSecBD",
+            storeWebsite: "https://TechSecBD.com",
+            storeLink: "/",
 
 
-
-            regularAds: true,
-            featuredAds: false,
+            regularAds: false,
+            featuredAds: true,
             premiumAds: false,
 
             description:
                 "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            extras: [
+            features: [
                 "Infinity Display",
                 "108MP Rear-Facing Camera",
                 "Iris Security Scanner",
@@ -186,25 +189,26 @@ export default [
 
             capacity: 1,
 
-            adsCondition:"New",
-            adsBrand:"Xiaomi",
+            adsCondition: "New",
+            adsBrand: "Xiaomi",
 
-            publishedID:"2",
-            publishedName:"Badhon",
-            publishedNumber:"01625269160",
-            store:false,
-            storeName:"",
-            storeWebsite:"",
+            publisherID: "1",
+            publisherName: "Badhon",
+            publisherEmail: "SaidulasdasdBadhon@gmail.com",
+            publisherNumber: "016205861542",
+            store: false,
+            storeName: "",
+            storeWebsite: "",
 
 
 
-            regularAds: true,
-            featuredAds: false,
+            regularAds: false,
+            featuredAds: true,
             premiumAds: false,
 
             description:
                 "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            extras: [
+            features: [
                 "Infinity Display",
                 "12MP Rear-Facing Camera",
                 "Iris Security Scanner",
@@ -269,25 +273,26 @@ export default [
 
             capacity: 1,
 
-            adsCondition:"New",
-            adsBrand:"Apple",
+            adsCondition: "New",
+            adsBrand: "Apple",
 
-            publishedID:"1",
-            publishedName:"Saidul Badhon",
-            publishedNumber:"01620861542",
-            store:true,
-            storeName:"TechSecBD",
-            storeWebsite:"https://TechSecBD.com",
+            publisherID: "1",
+            publisherName: "Saidul Badhon",
+            publisherEmail: "SaiduadslBadhon@gmail.com",
+            publisherNumber: "0160020861542",
+            store: true,
+            storeName: "TechSecBD",
+            storeWebsite: "https://TechSecBD.com",
 
 
 
-            regularAds: true,
-            featuredAds: false,
-            premiumAds: false,
+            regularAds: false,
+            featuredAds: true,
+            premiumAds: true,
 
             description:
                 "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            extras: [
+            features: [
                 "Infinity Display",
                 "12MP Rear-Facing Camera",
                 "Iris Security Scanner",
@@ -355,15 +360,16 @@ export default [
 
             capacity: 1,
 
-            adsCondition:"New",
-            adsBrand:"Apple",
+            adsCondition: "New",
+            adsBrand: "Apple",
 
-            publishedID:"1",
-            publishedName:"Saidul Badhon",
-            publishedNumber:"01620861542",
-            store:true,
-            storeName:"TechSecBD",
-            storeWebsite:"https://TechSecBD.com",
+            publisherID: "1",
+            publisherName: "Saidul Badhon",
+            publisherEmail: "SaidulBadhon@gmail.com",
+            publisherNumber: "01620861542",
+            store: true,
+            storeName: "TechSecBD",
+            storeWebsite: "https://TechSecBD.com",
 
 
 
@@ -373,7 +379,7 @@ export default [
 
             description:
                 "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            extras: [
+            features: [
                 "Infinity Display",
                 "12MP Rear-Facing Camera",
                 "Iris Security Scanner",

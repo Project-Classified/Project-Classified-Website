@@ -1,0 +1,194 @@
+.AllAdsPage {
+    background-color: #efeff9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.AllAdsPage .Header {
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+
+    display: flex;
+    flex-direction: column;    
+    padding: 0px;
+    margin: 0px;
+
+    overflow: hidden;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.AllAdsPage .Header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.AllAdsPage .Header .Header-Body {
+    position: absolute;
+    top: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .5);
+
+}
+.AllAdsPage .Header .Header-Body .Header-Data {
+    position: absolute;
+    
+    height: 100%;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.AllAdsPage .Header .Header-Body h1 {
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+
+    cursor: default;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.AllAdsPage .Header .Header-Body .h6 {
+    display: flex;
+    flex-direction: row;
+
+    cursor: default;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.AllAdsPage .Header .Header-Body .h6 h6 {
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.AllAdsPage .Header .Header-Body .h6 .Home {
+    transition: all .2s ease-in-out;
+}
+
+.AllAdsPage .Header .Header-Body .h6 .Home:hover {
+    color: crimson
+}
+
+.AllAdsPage .Header .Header-Body .h6 .AllStoresList {
+    color: rgb(190, 190, 190);
+cursor: default;
+
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+/*
+.AllStoresPage .Header .Header-Body .h6 .AllStoresList:hover {
+    color: crimson
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+.AllAdsPage .SuperSearchBar-Container {
+position: absolute;
+width: 800px;
+top: 185px;
+}
+
+
+.AllAdsPage .Body {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 1250px;
+    background-color: transparent;
+
+    display: grid;
+    
+    grid-template-columns: 24% 74%;
+    grid-template-rows: 100%;
+    grid-gap: 25px;
+
+}
+.AllAdsPage .Body .Search-Container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+    overflow: hidden;
+}
+.AllAdsPage .Body .Search-Container .Search-Container-Header {
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.AllAdsPage .Body .Search-Container .Search-Container-Header h1 {}
+
+.AdsType-Header {
+    border-bottom: .5px rgba(220, 20, 60, .25) solid;
+
+    padding:15px;
+    color: #2a2a2a;
+}
+.AdsType-Header h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+.AllAdsPage .Body .Ads-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+}

@@ -11,7 +11,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import PhoneRoundedIcon from '@material-ui/icons/PhoneRounded';
 
-import FeaturedAdsLoader from "../../../../Components/DefaultNavigation/FeaturedAdsLoader/FeaturedAdsLoader"
+import AdComponentLoader from "../../../../Components/DefaultNavigation/AdComponentLoader/AdComponentLoader"
 
 import Ads1 from "../../../../Assets/FeaturedAds/Ads1.png"
 import Ads2 from "../../../../Assets/FeaturedAds/Ads2.png"
@@ -75,79 +75,79 @@ export default function StoreProfilePage(props) {
                 <div className="Container-Main">
                     <div className="Container">
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adCatagory="Camera" adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                            <AdComponentLoader adImage={Ads1} adCatagory="Camera" adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads2} adCatagory="Camera" adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
+                            <AdComponentLoader adImage={Ads2} adCatagory="Camera" adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adCatagory="Camera" adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
+                            <AdComponentLoader adImage={Ads3} adCatagory="Camera" adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
+                            <AdComponentLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
+                            <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
-                        </div>
-
-                        <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
-                        </div>
-                        <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads2} adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
-                        </div>
-                        <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
-                        </div>
-                        <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
-                        </div>
-                        <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
-                        </div>
-                        <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                            <AdComponentLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
                         </div>
 
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                            <AdComponentLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads2} adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
+                            <AdComponentLoader adImage={Ads2} adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
+                            <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
+                            <AdComponentLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
+                            <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                            <AdComponentLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
                         </div>
 
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                            <AdComponentLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads2} adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
+                            <AdComponentLoader adImage={Ads2} adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
+                            <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
+                            <AdComponentLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
+                            <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
                         </div>
                         <div className="FeaturedAdsLoader">
-                            <FeaturedAdsLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                            <AdComponentLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                        </div>
+
+                        <div className="FeaturedAdsLoader">
+                            <AdComponentLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                        </div>
+                        <div className="FeaturedAdsLoader">
+                            <AdComponentLoader adImage={Ads2} adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
+                        </div>
+                        <div className="FeaturedAdsLoader">
+                            <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="6 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="65000" />
+                        </div>
+                        <div className="FeaturedAdsLoader">
+                            <AdComponentLoader adImage={Ads4} adName="RAK Premium Water Bottle" adTime="12 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="450" />
+                        </div>
+                        <div className="FeaturedAdsLoader">
+                            <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
+                        </div>
+                        <div className="FeaturedAdsLoader">
+                            <AdComponentLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
                         </div>
                     </div>
                 </div>

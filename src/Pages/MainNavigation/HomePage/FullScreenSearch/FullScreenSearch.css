@@ -1,0 +1,95 @@
+.FullScreenSearch {
+    position: relative;
+}
+
+.FullScreenSearch .Bakground {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.FullScreenSearch .Bakground img{
+    width: 100%;
+    height: 100%;
+    
+    /* Add the blur effect */
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+
+
+    transform: scale(1.15);
+
+    -webkit-animation: MoveUp 1s ease-in-out infinite alternate;
+    -moz-animation: MoveUp 1s ease-in-out infinite alternate;
+    animation: MoveUp 1s ease-in-out infinite alternate;
+    animation-iteration-count: 1;
+    overflow: hidden;
+
+}
+
+@keyframes MoveUp {
+    from {
+        transform: scale(1.05);
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+    
+    to {
+        transform: scale(1.15);
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+    }
+}
+
+.FullScreenSearch .Container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.FullScreenSearch .Container h4 {
+    color: white;
+}
+
+.FullScreenSearch .Container h1 {
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    max-width: 31ch;
+    animation: typing 3.0s steps(62);
+
+    white-space: nowrap;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+/* The typing effect */
+@keyframes typing {
+    0% {
+        width: 0ch;
+        border-right: 5px solid white;
+    }
+    98% {
+         border-right: 5px solid white;
+    }
+    100% {
+        width: 31ch;
+        border-right : 0px solid transparent;
+    }
+}
+
+.FullScreenSearch .Container h4 {
+    font-size: 1.5rem;
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: 25px;
+}
+

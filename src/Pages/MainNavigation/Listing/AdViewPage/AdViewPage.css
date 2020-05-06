@@ -1,0 +1,466 @@
+.AdView {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    background-color: #efeff9;
+    padding-bottom: 50px;
+}
+
+.AdView .Container {
+    margin-top: 50px;
+    
+    height: 100%;
+    width: 1250px;
+
+    /* background-color: rgba(255, 99, 71, .1); */
+
+    display: grid;
+    grid-template-columns: 73% 25%;
+
+    grid-gap: 25px;
+
+}
+
+.AdView .Container .AdDetails {
+    width: 100%;
+    
+    /* background-color: saddlebrown; */
+    background-color: white;
+
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+}
+
+.AdView .Container .AdDetails .Ads-Image-Container  {
+    background-color: #fff;
+    
+    padding-top: 2.5%;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Image-Src  {
+    display: flex;
+    flex-direction: row;
+
+
+    height: 425px;
+    width: 95%;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightcoral;
+
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+
+    background-color: #efeff9;
+}
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Image-Src .Arrow  {
+    height: 12.5%;
+    width: 13.5%;
+    color: #343434;
+
+    padding: 25% 0px;
+    transition: all .2s ease-in-out;
+}
+
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Image-Src .Arrow:hover {
+    background-color: rgba(220, 20, 60, .75);
+    color: white;
+    cursor: pointer;
+    
+}
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Image-Src img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    
+    height: 100%;
+    width: 650px;
+}
+
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Name-Data {
+    display: flex;
+    flex-direction: row;
+    color: #999;
+
+    width: 95%;
+    margin-top: 15px;
+    align-items: center;
+    height: inherit;
+    justify-content: space-between;
+}
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Name-Data .Item-Name h2 {
+    padding: 0px;
+    margin:0px;
+    color: #2a2a2a;
+}
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Name-Data .Ads-UploadTime {
+    display: flex;
+    flex-direction: row;
+    color: #999;
+
+    align-items: center;
+    height: inherit;
+}
+
+.AdView .Container .AdDetails .Ads-Image-Container .Ads-Name-Data .Ads-UploadTime h4{
+
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: .75rem;
+}
+
+.AdView .Container .AdDetails .Ads-Price {
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+    margin-top: 5px;
+
+    /* margin-left: 25px; */
+    background-color: rgba(255, 99, 71, .1);
+}
+
+.AdView .Container .AdDetails .Ads-Price .Price {
+    /* background-color: rgba(220, 20, 60, .05); */
+    background-color: white;
+    /* width: 150px; */
+    margin-top: 25px;
+    height: 100%;
+    width: 100%;
+
+    /* border-radius: 10px; */
+
+    display: flex;
+    align-items: center;
+
+    transition: all .2s ease-in-out;
+}
+.AdView .Container .AdDetails .Ads-Price .Price:hover img {
+
+    transform: scale(1.1);
+    padding-left: 8px;
+}
+
+.AdView .Container .AdDetails .Ads-Price .Price:hover h3 {
+    transform: scale(1.1);
+    margin-left: 8px;
+
+}
+
+
+.AdView .Container .AdDetails .Ads-Price .Price img{
+    height: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.AdView .Container .AdDetails .Ads-Price .Price h3{
+    position: absolute;
+    padding:0px;
+    margin:0px;
+    padding-left: 25px;
+    color: white;
+    transition: all .2s ease-in-out;
+
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar  {
+    padding-top: 25px;
+    
+    /* background-color: rgba(255, 99, 71, .1); */
+
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Container {
+    background-color: white;
+}
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Container p {
+    font-size: 1rem;
+    color: #646464;
+    padding: 0px 25px;
+
+    display: block;
+
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Container .Features {
+    margin: 0px;
+    padding:0px;
+    padding-left: 25px;
+
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    padding-bottom: 15px;
+
+
+    
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Container .Features h3 {
+    color: #2a2a2a;
+    grid-column: 1/ 3;
+
+    padding-bottom: 10px;
+    border-bottom: 3px rgba(220, 20, 60, .75) solid;
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Container .Features .Features-Data {
+    color: #646464;
+    margin: 0px;
+    padding:0px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Container .Features .Features-Data h5 {
+    margin: 0px;
+    padding:0px;
+    padding-left: 10px;
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview {
+    position: relative;
+    top: -50px;
+}
+
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview .Ads-Header {
+color: #252525;
+    padding-left: 25px;
+
+    border-bottom: crimson 5px solid;
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview .Ads-Section1 {
+    padding-top: 10px;
+
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview .Ads-Section1 h4 {
+
+    padding: 0px;
+    margin: 10px 20px;
+
+    font-weight: 500;
+
+    color: #545454;
+
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview .Ads-Section1 h4 b {
+    color: #222222;
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview .Ads-Section2 {
+    padding-left: 20px;
+
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview .Ads-Section2 .Ads-Section2-Data {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .85rem;
+
+    border-bottom: .5px solid rgba(220, 20, 60, .5);
+
+    transition: all .2s ease-in-out;
+}
+
+.AdView .Container .AdDetails .Ads-Details-Bar .Ads-Details-Overview .Ads-Section2 .Ads-Section2-Data:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.AdView .Container .SellerInfos {
+    border-radius: 10px;
+
+    background-color: transparent;
+overflow: hidden;
+
+
+
+/** NOTE **/
+
+    /* height: 415px; */
+}
+
+
+.AdView .Container .SellerInfos .SellerInfos-Header {
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    color: #333;
+    border-bottom: .5px solid rgba(0, 0, 0, .25);
+
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+
+}
+
+.AdView .Container .SellerInfos .SellerInfos-Header h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.AdView .Container .SellerInfos .SellerInfos-Datas {
+    padding-top: 15px;
+    background-color: white;
+    color : #646464;
+
+    padding-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+
+}
+
+
+
+.AdView .Container .SellerInfos .SellerInfos-Datas .SellerInfos-Data:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+
+.AdView .Container .SellerInfos .SellerInfos-Datas .SellerInfos-Data {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding-bottom: 25px;
+
+    transition: all .2s ease-in-out;
+}
+
+.AdView .Container .SellerInfos .SellerInfos-Datas .SellerInfos-Data h6 {
+    padding: 0px;
+    margin: 0px;
+    font-size: .85rem;
+
+    line-height: 22px;
+}
+
+.AdView .Container .SellerInfos .SellerInfos-ContactInfo {
+    background-color: hotpink;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+.AdView .Container .SellerInfos .SellerInfos-ContactInfo 
+.SellerInfos-PhoneNumber .NumberBar{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    border-top: .5px rgba(220, 20, 60, .75) solid;
+    border-bottom: .5px rgba(220, 20, 60, .75) solid;
+
+    transition: all .2s ease-in-out;
+}
+
+.AdView .Container .SellerInfos .SellerInfos-ContactInfo 
+.SellerInfos-PhoneNumber .NumberBar:hover{
+
+    background: crimson;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+.AdView .Container .SellerInfos .SellerInfos-ContactInfo 
+.SellerInfos-SendMessage{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    color: #444;
+
+    border-bottom: .5px rgba(220, 20, 60, .75) solid;
+
+    transition: all .2s ease-in-out;
+}
+
+.AdView .Container .SellerInfos .SellerInfos-ContactInfo 
+.SellerInfos-SendMessage:hover{
+
+    background: crimson;
+    cursor: pointer;
+    color: white;
+
+}
+
+.AdView .Container .SellerInfos .SellerInfos-ContactInfo 
+.SellerInfos-SendEmail{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    color: #444;
+
+
+    transition: all .2s ease-in-out;
+}
+
+.AdView .Container .SellerInfos .SellerInfos-ContactInfo 
+.SellerInfos-SendEmail:hover{
+
+    background: crimson;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+.AdView .Container .SellerInfos .SellerInfos-GoogleAds {
+    background-color: white;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.AdView .Container .SellerInfos .SellerInfos-GoogleAds .GoogleAds {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+}
