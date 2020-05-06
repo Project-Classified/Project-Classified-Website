@@ -1,0 +1,79 @@
+.PopularCategoriesHeader{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #efeff9;
+
+}
+.PopularCategories {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #efeff9;
+}
+
+.PopularCategories .Container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PopularCategories .Container .CategorieContainer {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.PopularCategories .Container .CategorieContainer:hover {
+    cursor: pointer;
+    background-color: rgba(220, 20, 60, 1.75);
+    color: white;
+    transform: scale(1.05);
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.PopularCategories .Container .CategorieContainer:hover .Icon {color: white;}
+.PopularCategories .Container .CategorieContainer:hover h1 {color: white;}
+.PopularCategories .Container .CategorieContainer:hover h4 {color: white;}
+
+.PopularCategories .Container .CategorieContainer .Icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: rgba(220, 20, 60, 0.75);
+    transition: all .4s ease-in-out;
+
+}
+.PopularCategories .Container .CategorieContainer h1 {
+    padding: 0px; margin: 0px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+    transition: all .2s ease-in-out;
+
+}
+.PopularCategories .Container .CategorieContainer h4 {
+    padding: 0px; margin: 0px;
+    color: #99999f;
+    font-weight: 500;
+    font-size: .9rem;
+    transition: all .4s ease-in-out;
+
+}

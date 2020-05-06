@@ -1,0 +1,95 @@
+.SearchBar {
+    margin-top: 50px;
+    height: 50px;
+    /* width: 60%; */
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 20% 25% 40% 15%;
+
+    background-color: white;
+    
+    border-radius: 10px;
+
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    
+}
+
+.SearchBar .SelectLocation,
+.SearchBar .SelectCategory,
+.SearchBar .SearchInput,
+.SearchBar .SearchButton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /*border-right: 1px red solid;
+    border-left: 1px green solid;*/
+
+    height: 50px;
+    color: #444;
+
+}
+
+.SearchBar .SelectLocation h5,
+.SearchBar .SelectLocation .icon,
+.SearchBar .SelectCategory h5 ,
+.SearchBar .SelectCategory .icon {
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchBar .SelectLocation {
+    border-radius: 10px;
+}
+
+.SearchBar .SelectCategory {
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+
+.SearchBar .SearchButton button
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(220, 20, 60);
+    
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    color: white;
+}
+
+.SearchBar .SearchInput {
+    margin-left: 10px;
+}
+
+.SearchBar .SearchInput input {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    color: #444;
+    font-weight: 600;
+}
+.SearchBar .SearchInput input:focus {
+    outline: none;
+}
+
+
+
+
+

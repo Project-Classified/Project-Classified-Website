@@ -1,0 +1,113 @@
+.PricingAndPackagesMain{
+    display: flex;
+    flex-direction: column;
+    padding-top:50px;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #efeff9;
+
+}
+.PricingAndPackages {
+    padding-top:50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #efeff9;
+    
+    padding-bottom: 100px;
+}
+
+.PricingAndPackages .Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+
+    grid-gap: 25px;
+
+    /*justify-content: space-between;
+    align-items: center;
+    background: royalblue;*/
+
+}
+
+.PricingAndPackagesPackages {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(220,20,60, .0);
+    overflow: hidden;
+
+    transition: all .3s ease-in-out;
+
+} 
+
+.PricingAndPackagesPackages .Tear {
+    color: #2d3436;
+    font-size: 1.25rem;
+}
+.PricingAndPackagesPackages .Pricing {
+    background-color: rgba(220, 20, 60, 0.75);
+    color: white;
+    font-size: .75rem;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.PricingAndPackagesPackages .Pricing h3{
+    padding-top: 12px;
+}
+
+.PricingAndPackagesPackages .Datas{
+    width: 100%;
+    text-align: center;
+}
+
+.PricingAndPackagesPackages .Datas .Data{
+    margin: 0px;
+    padding: 0px;
+    padding: 15px 0px;
+    width: 100%;
+    border-bottom: 1px solid rgba(220,20,60, .1) ;
+    color: #444444;
+    font-weight: 500;
+}
+
+.PricingAndPackagesPackages .Button{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+.PricingAndPackagesPackages .Button Button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: Roboto;
+    color: crimson;
+    border-radius: 0px;
+    transition: all .2s ease-in-out;
+
+}
+
+
+
+
+
+.PricingAndPackagesPackages:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0, .25);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.PricingAndPackagesPackages:hover .Button Button {
+    background-color: rgba(220,20,60, 1);
+    color: white;
+}

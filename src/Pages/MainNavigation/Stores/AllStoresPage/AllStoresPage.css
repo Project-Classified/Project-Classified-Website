@@ -1,0 +1,239 @@
+.AllStoresPage {
+    background-color: #efeff9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AllStoresPage .Header {
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+
+    display: flex;
+    flex-direction: column;    
+    padding: 0px;
+    margin: 0px;
+
+    overflow: hidden;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.AllStoresPage .Header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.AllStoresPage .Header .Header-Body {
+    position: absolute;
+    top: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .5);
+
+}
+.AllStoresPage .Header .Header-Body .Header-Data {
+    position: absolute;
+    
+    height: 100%;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.AllStoresPage .Header .Header-Body h1 {
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+
+    cursor: default;
+
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.AllStoresPage .Header .Header-Body .h6 {
+    display: flex;
+    flex-direction: row;
+
+    cursor: default;
+
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.AllStoresPage .Header .Header-Body .h6 h6 {
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.AllStoresPage .Header .Header-Body .h6 .Home {
+    transition: all .2s ease-in-out;
+}
+
+.AllStoresPage .Header .Header-Body .h6 .Home:hover {
+    color: crimson
+}
+
+.AllStoresPage .Header .Header-Body .h6 .AllStoresList {
+    color: rgb(190, 190, 190);
+cursor: default;
+
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+/*
+.AllStoresPage .Header .Header-Body .h6 .AllStoresList:hover {
+    color: crimson
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.AllStoresPage .Body {
+    width: 80%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.AllStoresPage .Body .Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    width: 80%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AllStoresPage-StoreData {
+    width: 250px;
+    height: 300px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+.AllStoresPage-StoreData .Image {
+    /*background-color: tomato;*/
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+
+}
+.AllStoresPage-StoreData .Image img {
+    height: 100%;
+    width: 100%;
+    /*background-color: red;*/
+}
+
+
+.AllStoresPage-StoreData {
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.AllStoresPage-StoreData .Data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 80px;
+    margin-top: 20px;
+    transition: all .2s ease-in-out;
+}
+.AllStoresPage-StoreData .Data h2 {
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: -15px;
+
+    color: #2a2a2a;
+    font-size: 1.25rem;
+    transition: all .2s ease-in-out;
+}
+
+.AllStoresPage-StoreData .Data h3 {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 1rem;
+
+    color: #a3a19f;
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+.AllStoresPage-StoreData:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+    transform: scale(1.05);
+    cursor: pointer;
+
+    
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.AllStoresPage-StoreData:hover .Data {
+    background-color: crimson;
+}
+
+.AllStoresPage-StoreData:hover .Data h2{
+    color: white;
+}
+.AllStoresPage-StoreData:hover .Data h3{
+    color: white;
+}

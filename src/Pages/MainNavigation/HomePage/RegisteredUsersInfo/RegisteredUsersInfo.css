@@ -1,0 +1,51 @@
+.RegisteredUsersInfo {
+    background:  url("./Assets/Beg.jpg") repeat fixed 100%;
+    display: flex;
+}
+
+.RegisteredUsersInfo .RegisteredUsersInfo-Body {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.RegisteredUsersInfo .RegisteredUsersInfo-Body .Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+    width: 80%;
+
+    /*background-color: rosybrown;*/
+    
+}
+.RegisteredUsersInfo .RegisteredUsersInfo-Body .Container .Section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.RegisteredUsersInfo .RegisteredUsersInfo-Body .Container .Section .Data {
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.RegisteredUsersInfo .RegisteredUsersInfo-Body .Container .Section .Data h1 {
+    padding: 0px;
+    margin:0px;
+}
+.RegisteredUsersInfo .RegisteredUsersInfo-Body .Container .Section .Data h3 {
+    padding: 0px;
+    margin:0px;
+}
+
+.RegisteredUsersInfo .RegisteredUsersInfo-Body .Container .Section .Image {
+    height : 100px;
+    width : 100px;
+}
+
+.RegisteredUsersInfo .RegisteredUsersInfo-Body .Container .Section .Image img{
+
+    width: 100%;
+    height: 100%;
+}
