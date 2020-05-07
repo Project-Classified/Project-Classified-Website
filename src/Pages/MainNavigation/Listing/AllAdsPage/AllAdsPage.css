@@ -152,43 +152,40 @@ top: 185px;
     grid-gap: 25px;
 
 }
-.AllAdsPage .Body .Search-Container {
-    background-color: white;
+
+
+
+
+
+
+
+
+
+
+.AdsList {
+
+    background-color: transparent;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.05);
-    overflow: hidden;
-}
-.AllAdsPage .Body .Search-Container .Search-Container-Header {
-    background-color: crimson;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,.05); */
+    margin-top: -21px;
 }
 
-.AllAdsPage .Body .Search-Container .Search-Container-Header h1 {}
+.AdsList .Ads-Container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+    /* display: grid;
+    padding-left: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+    justify-content: space-around; */
 
-.AdsType-Header {
-    border-bottom: .5px rgba(220, 20, 60, .25) solid;
-
-    padding:15px;
-    color: #2a2a2a;
-}
-.AdsType-Header h2{
-    padding: 0px;
-    margin: 0px;
-}
-
-.AllAdsPage .Body .Ads-Container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0rem;
+    grid-column-gap: 0px;
 
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.05);
 }

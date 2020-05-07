@@ -10,13 +10,13 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import CategoryIcon from '@material-ui/icons/Category';
 
 export default function AdComponentLoader(props) {
-    console.log(props.data)
+    // console.log(props.data)
 
     return (
-        <>
+        < div style={{ transform: `scale(${props.scale})`, height: "90%" }} >
             {props.data ? <Link to={`/Ads/${props.data.slug}`} style={{ textDecoration: 'none' }}>
 
-                <div className="FeaturedAdsContainer">
+                <div className="FeaturedAdsContainer" style={{ backgroundColor: props.backgroundColor && props.backgroundColor }}>
                     <div className="Image">
                         <img src={props.adImage || ImageNotFound} alt="Ad Image" />
                         <div className="ViewDetails">
@@ -48,8 +48,9 @@ export default function AdComponentLoader(props) {
 
                 </div >
             </Link>
-                : <div />}
-        </>
+                : <div />
+            }
+        </div >
 
     )
 }

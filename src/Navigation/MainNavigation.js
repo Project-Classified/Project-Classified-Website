@@ -49,7 +49,7 @@ export default function MainNavigation(props) {
         setIsInHomePage(false)
     }
 
-    console.log(props)
+    // console.log(props)
 
     return (
         <Fragment>

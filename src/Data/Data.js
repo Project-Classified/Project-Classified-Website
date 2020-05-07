@@ -96,7 +96,7 @@ export default [
             slug: "Galaxy-S20-Ultra",
 
             adsType: "Sell",
-            adsCategory: "Mobile",
+            adsCategory: "PC",
             adsLocation: "Mirpur 12, Dhaka",
             publishedAt: "2020-05-04",
             price: 55000,
@@ -182,7 +182,7 @@ export default [
             slug: "Xiaomi-Redmi-Note-8-Pro",
 
             adsType: "Buy",
-            adsCategory: "Mobile",
+            adsCategory: "Game",
             adsLocation: "Mirpur 10, Dhaka",
             publishedAt: "2020-04-30",
             price: 18000,
@@ -266,7 +266,7 @@ export default [
             slug: "Pro-Max-Ultra-Official-New-GOOD",
 
             adsType: "Sell",
-            adsCategory: "Mobile",
+            adsCategory: "Laptop",
             adsLocation: "Mirpur 10, Dhaka",
             publishedAt: "2020-05-06",
             price: 5000,
@@ -353,7 +353,7 @@ export default [
             slug: "Official-New-GOOD",
 
             adsType: "Sell",
-            adsCategory: "Mobile",
+            adsCategory: "Book",
             adsLocation: "Mirpur 10, Dhaka",
             publishedAt: "2020-05-06",
             price: 75000,

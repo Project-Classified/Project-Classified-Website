@@ -49,7 +49,7 @@ export default function FeaturedAds() {
                     {loading ? <Loading name="Loading Ads..." /> : ShowAds}
 
 
-                    <Link style={{ textDecoration: "none", color: "#444" }} className="Link" to="/AdView" > <AdComponentLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" /></Link>
+                    {/* <Link style={{ textDecoration: "none", color: "#444" }} className="Link" to="/AdView" > <AdComponentLoader adImage={Ads1} adName="Canon EOS 60D" adTime="1 Hour Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" /></Link>
 
                     <AdComponentLoader adImage={Ads2} adName="Ladies Top" adTime="3 Hour Ago" adLocation="Mirpur 11, Dhaka" adPrice="650" />
 
@@ -59,7 +59,7 @@ export default function FeaturedAds() {
 
                     <AdComponentLoader adImage={Ads3} adName="Samsung Galaxy Note 10 Pro" adTime="1 Day Ago" adLocation="Mirpur 6, Dhaka" adPrice="62500" />
 
-                    <AdComponentLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" />
+                    <AdComponentLoader adImage={Ads1} adName="Canon EOS 80D" adTime="2 Days Ago" adLocation="Mirpur 10, Dhaka" adPrice="24000" /> */}
 
                 </div>
             </div>
