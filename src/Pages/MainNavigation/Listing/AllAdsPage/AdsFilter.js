@@ -3,10 +3,18 @@ import "./AdsFilter.css"
 import { AdsContext } from '../../../../Context/AdsContext'
 import { Button } from '@material-ui/core'
 
-import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+
+
+
+//ANIMATED
+import { animated, useSpring } from "react-spring"
+import AdsTypeSelector from '../../../../Components/Other/AdsTypeSelector/AdsTypeSelector';
+
+import { AdsTypeContext } from "../../../../Context/AdsTypeContext"
+
 
 //Get all unique value
 const getUnique = (items, value) => {
@@ -15,10 +23,18 @@ const getUnique = (items, value) => {
 
 export default function AdsFilter(props) {
 
+
+
+
+
+
+
+
+
     const adsContext = useContext(AdsContext)
 
     const { handleChange, adsType, adsBrand, adsCategory, adsLocation, price, minPrice, maxPrice } = adsContext;
-
+    console.log(adsType)
     //Get unique Type
     let getAdsType = getUnique(props.ad, "adsType")
     let getAdsCategory = getUnique(props.ad, "adsCategory")
@@ -35,6 +51,33 @@ export default function AdsFilter(props) {
     const [showCategoryType, setShowCategoryType] = useState(true)
     const [showLocationType, setShowLocationType] = useState(true)
 
+
+
+    const ShowAdsTypeAnim = useSpring({
+        height: showAdsType ? "210px" : "0px",
+    })
+    const ShowAdsTypeAnimR = useSpring({
+        transform: showAdsType ? "rotate(180deg)" : "rotate(0deg)",
+    })
+
+    const ShowCategoryTypeAnim = useSpring({
+        height: showCategoryType ? "225px" : "0px",
+    })
+    const ShowCategoryTypeAnimR = useSpring({
+        transform: showCategoryType ? "rotate(180deg)" : "rotate(0deg)",
+    })
+
+    const ShowLocationTypeAnim = useSpring({
+        height: showLocationType ? "115px" : "0px",
+    })
+    const ShowLocationTypeAnimR = useSpring({
+        transform: showLocationType ? "rotate(180deg)" : "rotate(0deg)",
+    })
+
+
+    const adsTypeContext = useContext(AdsTypeContext)
+    const { loading, AllAdsType } = adsTypeContext;
+
     return (
         <div className="Search-Container">
             <div className="Search-Container-Header">
@@ -49,25 +92,45 @@ export default function AdsFilter(props) {
                 <Button className="AdsType-ActiveData" onClick={() => setShowAdsType(!showAdsType)}>
                     <h4>Ads Type : </h4>
                     <h4> {adsType}</h4>
-                    {!showAdsType ? <ExpandLessIcon className="icon" /> :
-                        <ExpandMoreRoundedIcon className="icon" />}
+                    {/* <h4> {AllAdsType}</h4> */}
+
+
+
+
+                    {/* <AdsTypeSelector /> */}
+                    <animated.div className="icon" style={ShowAdsTypeAnimR}>
+                        <ExpandLessIcon />
+                    </animated.div>
 
                 </Button>
 
-                <div className={showAdsType ? "AdsType-Data" : "AdsType-Data-Inactive"}>
-                    {getAdsType && getAdsType.map(ad => {
+                {/* <div className={showAdsType ? "AdsType-Data" : "AdsType-Data-Inactive"}> */}
+                <animated.div className="AdsType-Data" style={ShowAdsTypeAnim}>
+
+                    {/* rgba(220,20,60,.75); */}
+
+                    {/* {getAdsType && getAdsType.map(ad => {
                         return (
                             <Button key={ad} className="AdsType-Data-Value" onClick={() => handleChange("adsType", ad)}>
-                                <FiberManualRecordIcon style={{ fontSize: ".75rem", color: "#646464", marginRight: 5 }} />
-                                <FiberManualRecordIcon style={{ position: "absolute", left: 17, zIndex: 5, fontSize: ".5rem", color: "#fff" }} />
+                                <FiberManualRecordIcon style={{ fontSize: ".75rem", marginRight: 5, color: adsType === ad ? "rgba(220,20,60,.75)" : "#646464" }} />
+                                <FiberManualRecordIcon style={{ position: "absolute", left: 17, zIndex: 5, fontSize: ".5rem", color: adsType === ad ? "rgba(220,20,60,.75)" : "#fff" }} />
 
-                                <h4>{ad}</h4>
+                                <h4 style={{ color: adsType === ad ? "rgba(220,20,60,.75)" : "#646464" }} > {ad}</h4>
                             </Button>
                         )
-                    })
+                    })} */}
 
-                    }
-                </div>
+                    {!loading && AllAdsType.map(data => {
+                        return (
+                            < Button key={data.id} className="AdsType-Data-Value" onClick={() => handleChange("adsType", data.name)} >
+                                <FiberManualRecordIcon style={{ fontSize: ".75rem", marginRight: 5, color: adsType === data.name ? "rgba(220,20,60,.75)" : "#646464" }} />
+                                <FiberManualRecordIcon style={{ position: "absolute", left: 17, zIndex: 5, fontSize: ".5rem", color: adsType === data.name ? "rgba(220,20,60,.75)" : "#fff" }} />
+                                {/* <img src={data.Icon} alt="location Icons" /> */}
+                                <h4 style={{ textTransform: "none" }}>{data.name}</h4>
+                            </ Button>
+                        )
+                    })}
+                </animated.div>
             </div>
 
 
@@ -79,32 +142,29 @@ export default function AdsFilter(props) {
                 <Button className="AdsType-ActiveData" onClick={() => setShowCategoryType(!showCategoryType)}>
                     <h4>Category : </h4>
                     <h4>{adsCategory}</h4>
-                    {!showCategoryType ? <ExpandLessIcon className="icon" /> :
-                        <ExpandMoreRoundedIcon className="icon" />}
+                    <animated.div className="icon" style={ShowCategoryTypeAnimR}>
+                        <ExpandLessIcon />
+                    </animated.div>
+
                 </Button>
 
-                <div className={showCategoryType ? "AdsType-Data" : "AdsType-Data-Inactive"}>
+                <animated.div className="AdsType-Data" style={ShowCategoryTypeAnim}>
 
                     {getAdsCategory && getAdsCategory.map(ad => {
                         return (
                             <Button key={ad} className="AdsType-Data-Value" onClick={() => handleChange("adsCategory", ad)}>
-                                <FiberManualRecordIcon style={{ fontSize: ".75rem", color: "#646464", marginRight: 5 }} />
-                                <FiberManualRecordIcon style={{ position: "absolute", left: 17, zIndex: 5, fontSize: ".5rem", color: "#fff" }} />
+                                <FiberManualRecordIcon style={{ fontSize: ".75rem", color: adsCategory === ad ? "rgba(220,20,60,.75)" : "#646464", marginRight: 5 }} />
+                                <FiberManualRecordIcon style={{ position: "absolute", left: 17, zIndex: 5, fontSize: ".5rem", color: adsCategory === ad ? "rgba(220,20,60,.75)" : "#fff" }} />
 
-                                <h4>{ad}</h4>
+                                <h4 style={{ color: adsCategory === ad ? "rgba(220,20,60,.75)" : "#646464" }}>{ad}</h4>
                             </Button>
                         )
                     })
 
                     }
 
-                </div>
+                </animated.div>
             </div>
-
-
-
-
-
 
 
             <div className="AdsType">
@@ -115,33 +175,39 @@ export default function AdsFilter(props) {
                 <Button className="AdsType-ActiveData" onClick={() => setShowLocationType(!showLocationType)}>
                     <h4>Location : </h4>
                     <h4>{adsLocation}</h4>
-                    {!showLocationType ? <ExpandLessIcon className="icon" /> :
-                        <ExpandMoreRoundedIcon className="icon" />}
+                    <animated.div className="icon" style={ShowLocationTypeAnimR}>
+                        <ExpandLessIcon />
+                    </animated.div>
                 </Button>
 
-                <div className={showLocationType ? "AdsType-Data" : "AdsType-Data-Inactive"}>
+                <animated.div className="AdsType-Data" style={ShowLocationTypeAnim}>
 
                     {getAdsLocation && getAdsLocation.map(ad => {
                         return (
                             <Button key={ad} className="AdsType-Data-Value" onClick={() => handleChange("adsLocation", ad)}>
-                                <FiberManualRecordIcon style={{ fontSize: ".75rem", color: "#646464", marginRight: 5 }} />
-                                <FiberManualRecordIcon style={{ position: "absolute", left: 17, zIndex: 5, fontSize: ".5rem", color: "#fff" }} />
+                                <FiberManualRecordIcon style={{ fontSize: ".75rem", color: adsLocation === ad ? "rgba(220,20,60,.75)" : "#646464", marginRight: 5 }} />
+                                <FiberManualRecordIcon style={{ position: "absolute", left: 17, zIndex: 5, fontSize: ".5rem", color: adsLocation === ad ? "rgba(220,20,60,.75)" : "#fff" }} />
 
-                                <h4>{ad}</h4>
+                                <h4 style={{ color: adsLocation === ad ? "rgba(220,20,60,.75)" : "#646464" }}>{ad}</h4>
                             </Button>
                         )
                     })}
 
-                </div>
+                </animated.div>
             </div>
 
 
 
 
-            <div className="AdsPriceRangeType">
-                <div className="AdsType-Header">
-                    <h2>Price Range</h2>
-                </div>
+            <div className="AdsType">
+                <Button className="AdsType-ActiveData" onClick={() => setShowCategoryType(!showCategoryType)}>
+                    <h4>Price Range : </h4>
+                    <h4> {minPrice} - {maxPrice}</h4>
+                    <animated.div className="icon" style={ShowCategoryTypeAnimR}>
+                        <ExpandLessIcon />
+                    </animated.div>
+
+                </Button>
 
                 <div className="AdsPriceRangeType-Data">
                     <div className="Minimum">
@@ -171,7 +237,7 @@ export default function AdsFilter(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }

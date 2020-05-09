@@ -391,41 +391,11 @@ export default [
                 "1 Year international warranty"
             ],
             images: [
-                {
-                    fields: {
-                        file: {
-                            url: "https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: "https://images.unsplash.com/photo-1509252054023-980dd0df5222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80"
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: "https://images.unsplash.com/photo-1544228865-7d73678c0f28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                        }
-                    }
-                }
+                { fields: { file: { url: "https://images.unsplash.com/photo-1550238309-986f951fb0c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" } } },
+                { fields: { file: { url: "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80" } } },
+                { fields: { file: { url: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" } } },
+                { fields: { file: { url: "https://images.unsplash.com/photo-1509252054023-980dd0df5222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" } } },
+                { fields: { file: { url: "https://images.unsplash.com/photo-1544228865-7d73678c0f28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" } } }
             ]
         }
     }

@@ -10,6 +10,10 @@ import AuthContextProvider from "./Context/AuthContext";
 import ThemeContextProvider from "./Context/ThemeContext"
 import AdsContextProvider from "./Context/AdsContext";
 
+import AdsTypeContextProvider from "./Context/AdsTypeContext";
+import CategoriesContextProvider from "./Context/CategoriesContext";
+import LocationContextProvider from "./Context/LocationContext";
+
 export default function App() {
 
   const [isLoading, setIsLoading] = useState(false);
@@ -48,21 +52,33 @@ export default function App() {
     if (isAuthenticated === true) {
       return (
         <ThemeContextProvider>
-            <AdsContextProvider>
-              <AuthContextProvider>
-                <MainNavigation />
-              </AuthContextProvider>
-            </AdsContextProvider>
+          <AdsTypeContextProvider>
+            <LocationContextProvider >
+              <CategoriesContextProvider>
+                <AdsContextProvider>
+                  <AuthContextProvider>
+                    <MainNavigation />
+                  </AuthContextProvider>
+                </AdsContextProvider>
+              </CategoriesContextProvider>
+            </LocationContextProvider >
+          </AdsTypeContextProvider>
         </ThemeContextProvider >
       )
     } else {
       return (
         <ThemeContextProvider>
-          <AdsContextProvider>
-            <AuthContextProvider>
-              <RootNavigation />
-            </AuthContextProvider>
-          </AdsContextProvider>
+          <AdsTypeContextProvider>
+            <LocationContextProvider>
+              <CategoriesContextProvider>
+                <AdsContextProvider>
+                  <AuthContextProvider>
+                    <RootNavigation />
+                  </AuthContextProvider>
+                </AdsContextProvider>
+              </CategoriesContextProvider>
+            </LocationContextProvider>
+          </AdsTypeContextProvider>
         </ThemeContextProvider >
       )
     }

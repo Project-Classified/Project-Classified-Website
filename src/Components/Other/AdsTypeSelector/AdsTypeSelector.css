@@ -1,0 +1,107 @@
+/* .LocationSelector {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    left: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 10;
+
+    backdrop-filter: blur(10px);
+    display: grid;
+
+    grid-template-columns: repeat( 3, minmax(250px, 1fr) );
+
+
+} */
+
+.LocationSelector {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 10;
+display: flex;
+justify-content: center;
+align-items: center;
+    backdrop-filter: blur(10px);
+    
+}
+.LocationSelector .Container {
+    width: 1250px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat( 3, minmax(250px, 1fr) );
+}
+
+
+
+
+.LocationSelector .Section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.LocationSelector .Section1 .Section1-Data{ 
+    width: 295px;
+    background-color:#efeff9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+.LocationSelector .Section1 .Section1-Data .MainCategories-Div{
+    width: 275px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 5px;
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+
+.LocationSelector .Section1 .Section1-Data .MainCategories-Div:hover{
+    background-color: rgba(220, 20, 60, .75);
+    color: #FFF;
+}
+.LocationSelector .Section1 .MainCategories-Div h4{
+    padding: 0px;
+    margin: 0px;
+
+    line-height: 15px;
+
+    text-align: left;
+}
+.LocationSelector .Section1 .MainCategories-Div img{
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.LocationSelector .ExitButton {
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+}

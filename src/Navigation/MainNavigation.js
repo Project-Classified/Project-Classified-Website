@@ -23,7 +23,7 @@ import ProfileSettingsPage from "../Pages/MainNavigation/Users/ProfileSettingsPa
 /* Listing */
 import AdViewPage from "../Pages/MainNavigation/Listing/AdViewPage/AdViewPage"
 import AllAdsPage from "../Pages/MainNavigation/Listing/AllAdsPage/AllAdsPage"
-import PostAddPage from "../Pages/MainNavigation/Listing/PostAddPage/PostAddPage"
+import PostAdPage from "../Pages/MainNavigation/Listing/PostAdPage/PostAdPage"
 
 /* DefaultNavigation */
 import AboutPage from "../Pages/DefaultNavigation/AboutPage/AboutPage"
@@ -75,7 +75,7 @@ export default function MainNavigation(props) {
 
 
                     <Route exact path="/AllAds" component={() => <AllAdsPage IsInHomePageHandlerFalse={IsInHomePageHandlerFalse} />} />
-                    <Route exact path="/PostAdd" component={() => <PostAddPage IsInHomePageHandlerFalse={IsInHomePageHandlerFalse} />} />
+                    <Route exact path="/PostAd" component={() => <PostAdPage IsInHomePageHandlerFalse={IsInHomePageHandlerFalse} />} />
 
 
                     <Route exact path="/About" component={() => <AboutPage IsInHomePageHandlerFalse={IsInHomePageHandlerFalse} />} />

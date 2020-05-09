@@ -1,5 +1,5 @@
 .StoreProfilePage {
-    background-color: #efeff9;
+    background-color: #red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,6 +131,7 @@ user-select: none;
 .StoreProfilePage .Body {
     /* margin-bottom: 500px; */
     /* background-color: rgba(0, 128, 128,.15); */
+    width: 80%;
     max-width: 1250px;
 
 }

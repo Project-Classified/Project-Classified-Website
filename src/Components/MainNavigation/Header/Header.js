@@ -48,7 +48,7 @@ function Header(props) {
 
             <Link style={{ textDecoration: "none", color: "#444" }} className="Link" to="/UserProfile"><Button><h4 style={{ padding: 0, margin: 0, color: props.isInHomePage ? "#fff" : "#444", textShadow: props.isInHomePage ? "0px 0px 5px rgba(0,0,0,1)" : "none" }}>My Account</h4></Button></Link>
 
-            <Link style={{ textDecoration: "none", color: "#444" }} className="Link" to="/PostAdd"><Button><h4 style={{ padding: 0, margin: 0, color: props.isInHomePage ? "#fff" : "#444", textShadow: props.isInHomePage ? "0px 0px 5px rgba(0,0,0,1)" : "none" }}>Post an Ad</h4></Button></Link>
+            <Link style={{ textDecoration: "none", color: "#444" }} className="Link" to="/PostAd"><Button><h4 style={{ padding: 0, margin: 0, color: props.isInHomePage ? "#fff" : "#444", textShadow: props.isInHomePage ? "0px 0px 5px rgba(0,0,0,1)" : "none" }}>Post an Ad</h4></Button></Link>
 
           </div>
 

@@ -1,0 +1,346 @@
+.PostAdPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efeff9;
+    
+    padding-bottom: 75px;
+}
+
+.PostAdPage .Header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.PostAdPage .Header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.PostAdPage .Header .Header-Body {
+    position: absolute;
+    top: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .5);
+
+}
+.PostAdPage .Header .Header-Body h6 {
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    /* padding-top: 10px; */
+    color: white;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+
+
+/** Body **/
+
+.PostAdPage .Body {
+    width: 80%;
+    width: 1250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.AdsInfo-Header h4 {
+    font-size: 1rem;
+    color: #2a2a2a;
+}
+
+.PostAdPage .Body .AdsType-Box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.PostAdPage .Body .AdsType-Box .AdsType-Selector {
+    background-color: white;
+    color: #646464;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1rem;
+
+    
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+}
+
+.PostAdPage .Body .AdsType-Box .AdsType-Selector .AdsType-Button {
+    width: 100%;
+    height: 100%;
+
+    padding-right: 15px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    align-items: center;
+
+    transition: all .2s ease-in-out;
+}
+.PostAdPage .Body .AdsType-Box .AdsType-Selector .AdsType-Button:hover {
+    cursor: pointer;
+    color: rgba(220,20,60,1);
+
+    background-color: rgba(220, 20, 60, .75);
+    color: #FFF;
+}
+
+.PostAdPage .Body .AdsType-Box .AdsType-Selector .AdsType-Button h4 {
+    padding: 0px;
+    margin: 0px;
+
+    line-height: 18px;
+
+    text-align: left;
+
+}
+
+.PostAdPage .Body .AdsType-Box .AdsType-Selector .AdsType-Button .icon {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    font-size: 1.5rem;
+    transform: rotateZ(180deg);
+}
+
+
+
+
+
+
+
+
+.PostAdPage .Body .PostAds-Selector {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PostAdPage .Body .PostAds-Selector .AddPhoto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+}
+
+
+.PostAdPage .Body .PostAds-Selector .AddPhoto .AddPhoto-Box  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.PostAdPage .Body .PostAds-Selector .AddPhoto .AddPhoto-Box .AddPhoto-Button {
+    height: 140px;
+    width: 200px;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+    border: 2px solid #646464;
+    transition: all .2s ease-in-out;
+}
+
+.PostAdPage .Body .PostAds-Selector .AddPhoto .AddPhoto-Box .AddPhoto-Button:hover {
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+ cursor: pointer;
+ transform: scale(1.05);
+}
+
+.PostAdPage .Body .PostAds-Selector .AddPhoto .AddPhoto-Box .AddPhoto-Button img {
+    width: 100%;
+    height: 100%;
+}
+
+/* DATA */
+.PostAdPage .Body .PostAds-Selector  {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form {
+    width: 95%;
+    display: flex;
+    left: 0px;
+    flex-direction: column;
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Condition{
+    display: grid;
+    grid-template-columns: 10% 89%; 
+}
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Condition .PostAds-Condition-Data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Condition .PostAds-Condition-Data Button{
+    width: 100px;
+    height: 35px;
+    margin-right: 15px;
+color: #646464;
+    transition: all .2s ease-in-out;
+    background-color: #efeff9;
+    border-radius: 5px;
+    text-transform:none;
+    /* box-shadow: 0px 0px 10px rgba(220, 20, 60, .25); */
+}
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Condition .PostAds-Condition-Data Button:hover{
+    background-color: rgba(220, 20, 60, .75);
+    color: white;
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Condition .PostAds-Condition-Data Button h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand{
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 89%; 
+}
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data {
+    width: 100%;
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data input{
+    width: 20%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-family: Roboto, sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #646466;
+
+    transition: all .4s ease-in-out;
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data input:not(:placeholder-shown) {
+    width: 100%;
+  }
+  
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data input:hover{
+    border: 1px solid #666;
+    background-color: #efeff9;
+    width: 100%;
+
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data input:focus{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #efeff9;
+}
+
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data.multiline textarea{
+    width: 20%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-family: Roboto, sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #646466;
+
+    line-height: 2;
+
+
+    resize: none;
+    transition: all .4s ease-in-out;
+}
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data.multiline textarea:hover{
+    width: 100%;
+
+}
+    .PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data.multiline textarea:focus{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #efeff9;
+}
+.PostAdPage .Body .PostAds-Selector .PostAds-Form .PostAds-Brand .PostAds-Brand-Data.multiline textarea:not(:placeholder-shown){
+    height: 300px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #efeff9;
+    height: 300px;
+}
+
+
+.PostAdPage .Body .PostAds-Selector .SubmitButton {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    width: 250px;
+    background-color: rgba(220, 20, 60, .75);
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+
+    transition: all .2s ease-in-out;
+}
+
+.PostAdPage .Body .PostAds-Selector .SubmitButton:hover {
+    background-color: rgba(220, 20, 60, 1);
+    transform: scale(1.05);
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+
+}
