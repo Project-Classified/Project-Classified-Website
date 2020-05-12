@@ -1,12 +1,12 @@
 export default {
     FirebaseConfig: {
-        apiKey: "AIzaSyD1tTmaJQw5S4DfIRvj-Zb6h8hKm-GLOtw",
-        authDomain: "bet-bd-504cc.firebaseapp.com",
-        databaseURL: "https://bet-bd-504cc.firebaseio.com",
-        projectId: "bet-bd-504cc",
-        storageBucket: "bet-bd-504cc.appspot.com",
-        messagingSenderId: "819354600431",
-        appId: "1:819354600431:web:e6d0f6726142710145ac1a",
-        measurementId: "G-VL5SH8CXS6"
-    },
+        apiKey: "AIzaSyDBRVuae8l7LGnAUIpFO-DtCQTkgPtq3P4",
+        authDomain: "project-classified-bd.firebaseapp.com",
+        databaseURL: "https://project-classified-bd.firebaseio.com",
+        projectId: "project-classified-bd",
+        storageBucket: "project-classified-bd.appspot.com",
+        messagingSenderId: "793987424991",
+        appId: "1:793987424991:web:123ad5ac06bfa02b29ff6a",
+        measurementId: "G-VZMLG9F6YJ"
+    }
 }

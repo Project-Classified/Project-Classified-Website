@@ -1,7 +1,7 @@
 import React from 'react'
 import "./FullScreenSearch.css"
 
-import bakground1 from "./Assects/Background.jpg"
+import bakground1 from "../../../../Assets/Backgrounds/Background.jpg"
 //                <img src={bakground1} alt={"background Image"}/>
 
 

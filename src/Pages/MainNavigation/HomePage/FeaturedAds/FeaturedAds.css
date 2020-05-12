@@ -22,7 +22,7 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     width: 80%;
-
+max-width: 1075px;
     justify-content: space-between;
     align-items: center;
 }

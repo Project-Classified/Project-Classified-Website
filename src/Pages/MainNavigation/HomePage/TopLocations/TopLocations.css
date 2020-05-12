@@ -21,7 +21,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 80%;
-
+max-width: 1075px;
     grid-gap: 25px;
 
     /*justify-content: space-between;
